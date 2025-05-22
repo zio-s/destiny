@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 export default function SpeechBubble({ text, image, variant, isVisible }) {
   const bubbleStyles = {
     variant1: { width: '54.3%', height: '18.5%', left: '7.96%', top: '80.55%' },
-    variant2: { width: '54.3%', height: '18.5%', left: '10.96%', top: '9.15%' },
+    variant2: { width: '54.3%', height: '18.5%', left: '11.5%', top: '6.55%' },
   };
   const [displayedLines, setDisplayedLines] = useState([]);
   const lines = text?.split('\n') || [];
@@ -40,8 +40,8 @@ export default function SpeechBubble({ text, image, variant, isVisible }) {
   }, [isVisible, text]);
 
   return (
-    <div className='relative w-full max-w-md mx-auto'>
-      <img src={image} alt='' className='w-full h-auto' />
+    <div className='relative w-full max-w-md mx-auto aspect-[3/4]'>
+      <img src={image} alt='' className='w-full object-contain' loading='lazy' />
       <div
         className='absolute flex flex-col gap-1 font-bold items-center justify-center text-base p-5 text-center text-black leading-tight'
         style={bubbleStyles[variant]}

@@ -68,7 +68,7 @@ export default function Section({ image, text, variant }) {
   }
 
   return (
-    <div ref={sectionRef} className='w-full min-h-[200px]'>
+    <div ref={sectionRef} className='w-full min-h-[500px]'>
       {text ? (
         <SpeechBubble text={text} image={image} variant={variant} isVisible={isVisible} />
       ) : (
