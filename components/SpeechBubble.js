@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 export default function SpeechBubble({ text, image, variant, isVisible }) {
   const bubbleStyles = {
     variant1: { width: '54.3%', height: '18.5%', left: '7.96%', top: '80.55%' },
-    variant2: { width: '54.3%', height: '18.5%', left: '11.5%', top: '6.55%' },
+    variant2: { width: '54.3%', height: '18.5%', left: '11.5%', top: '8%' },
   };
   const [displayedLines, setDisplayedLines] = useState([]);
   const lines = text?.split('\n') || [];
