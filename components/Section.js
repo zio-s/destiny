@@ -58,17 +58,11 @@ export default function Section({ image, text, variant }) {
   }, [isMounted, image]);
 
   if (!isMounted) {
-    return (
-      <div className='w-full'>
-        <div className='relative w-full max-w-md mx-auto'>
-          <img src={image} alt='' className='w-full h-auto' />
-        </div>
-      </div>
-    );
+    return <div className='w-full min-h-800'></div>;
   }
 
   return (
-    <div ref={sectionRef} className='w-full min-h-[500px]'>
+    <div ref={sectionRef} className='w-full min-h-100'>
       {text ? (
         <SpeechBubble text={text} image={image} variant={variant} isVisible={isVisible} />
       ) : (
