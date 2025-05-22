@@ -40,8 +40,8 @@ export default function SpeechBubble({ text, image, variant, isVisible }) {
   }, [isVisible, text]);
 
   return (
-    <div className='relative w-full max-w-md mx-auto aspect-[3/4]'>
-      <img src={image} alt='' className='w-full object-contain' loading='lazy' />
+    <div className='relative w-full max-w-md mx-auto'>
+      <img src={image} alt='' className='w-full' loading='lazy' />
       <div
         className='absolute flex flex-col gap-1 font-bold items-center justify-center text-base p-5 text-center text-black leading-tight'
         style={bubbleStyles[variant]}
