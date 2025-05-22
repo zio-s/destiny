@@ -18,7 +18,7 @@ const SajuTable = ({ personName, birthDateTime, sajuData }) => {
         </div>
 
         {/* 테이블 헤더 */}
-        <div className='grid grid-cols-[1.1fr_1.5fr_1.5fr_1.5fr_1.5fr] border-b-1 border-b-black-g'>
+        <div className={`grid grid-cols-[1.1fr_1.5fr_1.5fr_1.5fr_1.5fr] border-b-1 border-b-black-g`}>
           <div />
           {['時', '日', '月', '年'].map((title, idx) => (
             <div
@@ -58,7 +58,7 @@ const SajuTable = ({ personName, birthDateTime, sajuData }) => {
         ))}
 
         {/* 귀인 행 */}
-        <div className='grid grid-cols-[1.1fr_1.5fr_1.5fr_1.5fr_1.5fr]'>
+        <div className={`grid grid-cols-[1.1fr_1.5fr_1.5fr_1.5fr_1.5fr]`}>
           <div className='flex flex-col items-center justify-center border-b-1 border-black '>
             <span className='text-[clamp(10px,3.5vw,16px)] font-bold'>貴人</span>
             <span className='text-[clamp(8px,3.5vw,10px)]'>(귀인)</span>
