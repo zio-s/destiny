@@ -14,7 +14,7 @@ export default function Home() {
           text={`이제 본격적으로\noo님의 사주팔자를\n분석해볼 차례네요.`}
           variant='variant1'
         />
-        <Section image='/image/section-02.svg' />
+        <Section image='/image/section-02.svg' mt={true} />
         <Section
           image='/image/section-03.svg'
           text={`제가 oo님의 사주를\n보기 쉽게 표로 정리했어요`}

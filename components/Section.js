@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import SpeechBubble from './SpeechBubble';
 
-export default function Section({ image, text, variant }) {
+export default function Section({ image, text, variant, mt }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const sectionRef = useRef(null);
@@ -62,7 +62,7 @@ export default function Section({ image, text, variant }) {
   }
 
   return (
-    <div ref={sectionRef} className='w-full min-h-100'>
+    <div ref={sectionRef} className={`w-full min-h-100 ${mt && '-mb-40 -ml-4  '}`}>
       {text ? (
         <SpeechBubble text={text} image={image} variant={variant} isVisible={isVisible} />
       ) : (
