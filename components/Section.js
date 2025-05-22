@@ -73,7 +73,7 @@ export default function Section({ image, text, variant }) {
         <SpeechBubble text={text} image={image} variant={variant} isVisible={isVisible} />
       ) : (
         <div className='relative w-full max-w-md mx-auto'>
-          <img src={image} alt='' className='w-full h-auto' />
+          <img src={image} alt='section img' loading='lazy' className='w-full h-auto' />
         </div>
       )}
     </div>
